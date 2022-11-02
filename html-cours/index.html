@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML</title>
+    <!--icone de l'onglet-->
+    <link rel="shorcut icon" href="logo-HTML.png">
+</head>
+
+<body>
+    <header>
+         <!--le h1 il faut que 1 par page-->
+         <h1>Titre</h1>
+         <!--les p c'est pour du texte , comme paragraphe-->
+         <!--mettre un texte en italique mettre em-->
+         <p>Texte basique <em>Voici un texte en italiques</em> <strong>en un texte ene gras</strong>
+             <span>l'élement ne revient pas a la ligne</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 Totam quasi officiis saepe hic,
+                  atque perspiciatis nihil earum maxime iure duc
+                  imus cum veniam illum 
+                 ipsa eos impedit cupiditate quibusdam aperiam 
+                 temporibus?</p>
+
+         </p>
+    </header>
+    <!--les sections c'est pour matérialiser de grosse partie-->
+    <!--pour de plus petite on n'utilise les divs-->
+    <section>
+        <div>
+            <h2> Photos - Titre</h2>
+            <!--le alt c'est pour les nons voyants ou un bug-->
+            <img src="photo1.jpg" height="200" alt="image-paysage">
+        </div>
+        <div>
+            <h3>listes - Titre</h3>
+            <!--ul on annonce une liste-->
+            <!--multiplié la ligne maj+alt et flèche du bas-->
+            <ul>
+                <li>UL = une liste qui n'est pas rangé</li>
+                <li>UL = une liste qui n'est pas rangé</li>
+                <li>UL = une liste qui n'est pas rangé</li>
+            </ul>
+            <ol>
+                <li>Ol liste rangé</li>
+                <li>Ol liste rangé</li>
+                <li>Ol liste rangé</li>
+            </ol>
+
+        </div>
+        <div>
+            <h4>les tableaux -Titre</h4>
+            <table border="1" width="50%">
+                <!--une légende-->
+                <caption>Populations d'europe</caption>
+                <!--En-tete,l'entete du tableau-->
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Populations</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                      <td>France</td>  
+                      <td>66M</td> 
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>  
+                        <td>82M</td> 
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>  
+                        <td>45M</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h5><span>&#9755;</span> liens -Titre</h5>
+            <!--mettre un target pour ouvrir une notre page-->
+            <a href="https://htmlcheatsheet.com/" 
+            target="_blank">HTML CheatSheet</a>
+            <br>
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/"
+            target="_blank">Icones en HTML</a>
+        </div>
+        <div>
+            <h6>Vidéo-Titre</h6>
+            <video src="Mountains.mp4" height="200" autoplay loop muted></video>
+        </div>
+    </section>
+    <br>
+    <!--Formulaire-->
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <label for="name"> Nom </label><input id="name" 
+            type="text" placeholder="Entrez votre nom">
+            <br>
+            <br>   
+            <label for="Age"> Age </label>
+            <input id="age" type="number" min="0" max="99" step="1" value="18" placeholder="Entrez votre age"><br>
+
+
+            <!--Input select-->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option  selected value="femme">Femme</option>
+            </select><br>
+
+            <!--Input Radio-->
+            <div>
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" checked id="dog">
+                <label for="dog">Chien</label>
+
+                <input type="radio" name="type" id="cat">
+                <label for="cat">Chat</label>
+            </div>
+
+            <textarea cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea><br>
+
+            <!--Input Checkbox-->
+            <label><input type="checkbox"/>Accepter les CGV</label>
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br>
+    <!--Mail & envoi de fichier-->
+    <footer>
+      <a href="mailto:bernet1988@gmail.com">Ecrivez-moi!</a>
+      <br>
+      <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+</body>
+</html>
